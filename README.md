@@ -1,5 +1,6 @@
 # Web app of movies and series 
 
+Under development...
 
 ### Technologies
  - TypeScript
