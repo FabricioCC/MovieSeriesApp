@@ -2,6 +2,7 @@
 
 
 ### Technologies
+ - TypeScript
  - ReactJs
  - React Hooks
  - Axios
