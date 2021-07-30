@@ -3,6 +3,7 @@ import Pagination from "@material-ui/lab/Pagination";
 
 interface Props {
     setPage: Function,
+    numOfPages: number
 
 }
 
