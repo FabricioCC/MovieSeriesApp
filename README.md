@@ -1,5 +1,7 @@
 # Web app of movies and series 
 
+![Preview-Screens](https://github.com/FabricioCC/MovieSeriesApp/blob/main/prints.png)
+
 ## About this Project
 I made this project to train my knowledge of frontend, creating interfaces and consuming data from an external api. I had a lot of fun doing this.
 
