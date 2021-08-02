@@ -1,9 +1,16 @@
+import MainNav from "../MainNav/MainNav"
 import "./header.scss"
 
 function Header() {
     return (
-        <div>
-            <span onClick={()=> window.scrollTo(0,0)} className="header">🎬 Entertainment App 🎥</span>
+        <div className="header">
+            <div className="right">
+                <h1 onClick={()=> window.scrollTo(0,0)}> MovieSerie App </h1>   
+            </div>
+            <div className="left">
+                <MainNav/>
+            </div>
+            
         </div>
     )
 }

@@ -1,16 +1,21 @@
+@import "../../global.scss";
+
 .media {
     display: flex;
     flex-direction: column;
     width: 200px;
     padding: 5px;
     margin: 5px 0;
-    background-color: #282c34;
+    background-color: $mainColor;
+    color: white;
     border-radius: 10px;
     position: relative;
+    font-family: 'Roboto', sans-serif;
     
     &:hover{
-        background-color: white;
-        color: black;
+        background-color: rgb(15, 22, 53);
+        color: white;
+        box-shadow:1px 1px 10px red;
     }
 
     .poster {

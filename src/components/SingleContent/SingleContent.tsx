@@ -1,9 +1,10 @@
 import { img_300, unavailable } from '../../config/config'
 import "./SingleContent.scss"
 import { Badge } from "@material-ui/core";
+import ContentModal from '../ContentModal/ContentModal'
 
 interface Props {
-    id: number,
+    id: string,
     poster: string,
     title: string,
     date: string,
@@ -24,7 +25,7 @@ function SingleContent(props: Props) {
 
 
     return (
-        <div className="media">
+        <ContentModal media_type={media_type} id={id}>
             <Badge
                 badgeContent={vote_average}
                 color={vote_average > 6 ? "primary" : "secondary"}
@@ -35,7 +36,7 @@ function SingleContent(props: Props) {
                 {media_type === "tv" ? "TV Series" : "Movie"}
                 <span className="subTitle">{date}</span>
             </span>
-        </div>
+        </ContentModal>
     )
 }
 

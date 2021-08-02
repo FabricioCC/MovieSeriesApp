@@ -6,7 +6,7 @@ import Movie from '@material-ui/icons/Movie'
 import CustomPagination from '../../components/Pagination/CustomPagination'
 
 interface Movie {
-    id: number,
+    id: string,
     poster_path: string,
     title: string,
     name: string, 

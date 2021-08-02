@@ -7,7 +7,7 @@ import useGenre from '../../hooks/useGenre'
 
 
 interface Movie {
-    id: number,
+    id: string,
     poster_path: string,
     title: string,
     name: string, 

@@ -7,7 +7,7 @@ import useGenre from '../../hooks/useGenre'
 
 
 interface Series {
-    id: number,
+    id: string,
     poster_path: string,
     title: string,
     name: string, 
@@ -66,7 +66,7 @@ function Series() {
                             poster={serie.poster_path}
                             title={serie.title || serie.name}
                             date={serie.first_air_date || serie.release_date}
-                            media_type={serie.media_type}
+                            media_type="tv"
                             vote_average={serie.vote_average}
                             
                         />

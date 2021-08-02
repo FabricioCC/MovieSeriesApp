@@ -11,11 +11,10 @@ import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
+    display: "flex",
     width: "100%",
-    position: "fixed",
-    bottom: 0,
-    backgroundColor: "#2d313a",
-    zIndex: 100,
+    height: "100%",
+    backgroundColor: "inherit",
   },
 });
 

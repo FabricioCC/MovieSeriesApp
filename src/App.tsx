@@ -11,20 +11,20 @@ import { Container } from "@material-ui/core";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <div className="app">
-        <Container>
-          <Switch>
-            <Route path="/" component={Trending} exact />
-            <Route path="/movies" component={Movies} />
-            <Route path="/series" component={Series} />
-            <Route path="/search" component={Search} />
-          </Switch>
-        </Container>
-      </div>
-      <MainNav />
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+        <Header />
+          <Container className="container">
+            <Switch>
+              <Route path="/" component={Trending} exact />
+              <Route path="/movies" component={Movies} />
+              <Route path="/series" component={Series} />
+              <Route path="/search" component={Search} />
+            </Switch>
+          </Container>
+      </BrowserRouter>
+    </div>
+    
   );
 }
 
