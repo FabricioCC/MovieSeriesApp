@@ -1,4 +1,4 @@
-import react,{ReactElement, useEffect, useState } from "react";
+import {ReactElement, useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
@@ -13,6 +13,7 @@ import "./contentModal.scss";
 import { Button } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import Carousel from "../Carousel/Carousel";
+
 
 interface Props {
     children: ReactElement[]
@@ -160,7 +161,7 @@ export default function ContentModal(props: Props) {
                   <Button
                     variant="contained"
                     startIcon={<YouTubeIcon />}
-                    color="secondary"
+                    style={{backgroundColor: "#f00", color: "white"}}
                     target="__blank"
                     href={`https://www.youtube.com/watch?v=${video}`}
                   >

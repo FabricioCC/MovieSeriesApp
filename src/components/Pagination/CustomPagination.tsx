@@ -39,7 +39,7 @@ export default function CustomPagination(props: Props) {
           hideNextButton
           hidePrevButton
           color="primary"
-          style = {{backgroundColor: "white", padding: 5, borderRadius: "20%"}}
+          style = {{backgroundColor: "lightblue", padding: 5}}
           
           
 

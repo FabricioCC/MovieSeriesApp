@@ -43,11 +43,10 @@
 
 .ContentModal__title {
   height: 12%;
-  font-size: 3vw;
+  font-size: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .ContentModal__description {
@@ -59,7 +58,6 @@
   scrollbar-width: thin; /* Firefox */
   box-shadow: inset 0 0 5px #000000;
   text-align: justify;
-  font-size: 0.5rem;
 }
 
 .ContentModal__description::-webkit-scrollbar {
@@ -85,7 +83,7 @@
     height: 100%;
   }
   .ContentModal__title {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .ContentModal__description {
     font-size: 22px;

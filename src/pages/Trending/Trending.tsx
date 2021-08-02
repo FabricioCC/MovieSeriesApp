@@ -5,6 +5,7 @@ import SingleContent from '../../components/SingleContent/SingleContent'
 import Movie from '@material-ui/icons/Movie'
 import CustomPagination from '../../components/Pagination/CustomPagination'
 
+// eslint-disable-next-line
 interface Movie {
     id: string,
     poster_path: string,
@@ -14,10 +15,6 @@ interface Movie {
     release_date: string, 
     media_type: string,
     vote_average: number
-}
-
-interface Data{
-    results: [Movie]
 }
 
 function Trending() {
@@ -33,6 +30,7 @@ function Trending() {
 
     useEffect(() => {
         fetchTrending()
+        // eslint-disable-next-line
     }, [page])
 
     return (

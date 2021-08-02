@@ -2,7 +2,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header/Header";
-import MainNav from "./components/MainNav/MainNav";
 import Movies from "./pages/Movies/Movies";
 import Series from "./pages/Series/Series";
 import Trending from "./pages/Trending/Trending";

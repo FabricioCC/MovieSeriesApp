@@ -27,7 +27,7 @@ interface Genre {
 function Movies() {
 
     const [page, setPage] = useState(1)
-    const [content, setContent] = useState<[Movie]>()
+    const [content, setContent] = useState<Movie[]>()
     const [numOfPages, setNumOfPages] = useState(1)
     const [selectedGenres, setSelectedGenres] = useState<Genre[]>([])
     const [genres, setGenres] = useState<Genre[]>([])
@@ -41,6 +41,7 @@ function Movies() {
 
     useEffect(() => {
         fetchMovies()
+        // eslint-disable-next-line
     }, [genreforURL, page])
 
 
@@ -66,7 +67,7 @@ function Movies() {
                             poster={movie.poster_path}
                             title={movie.title || movie.name}
                             date={movie.first_air_date || movie.release_date}
-                            media_type={movie.media_type}
+                            media_type="movie"
                             vote_average={movie.vote_average}
                             
                         />

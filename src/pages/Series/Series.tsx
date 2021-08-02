@@ -6,7 +6,7 @@ import Genres from '../../components/Genres/Genres'
 import useGenre from '../../hooks/useGenre'
 
 
-interface Series {
+interface Serie {
     id: string,
     poster_path: string,
     title: string,
@@ -27,7 +27,7 @@ interface Genre {
 function Series() {
 
     const [page, setPage] = useState(1)
-    const [content, setContent] = useState<[Series]>()
+    const [content, setContent] = useState<Serie[]>()
     const [numOfPages, setNumOfPages] = useState(1)
     const [selectedGenres, setSelectedGenres] = useState<Genre[]>([])
     const [genres, setGenres] = useState<Genre[]>([])
@@ -41,6 +41,7 @@ function Series() {
 
     useEffect(() => {
         fetchSeries()
+        // eslint-disable-next-line
     }, [genreforURL, page])
 
 

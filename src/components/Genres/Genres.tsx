@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect} from 'react'
 import axios from 'axios'
 import { Chip } from '@material-ui/core'
 
@@ -61,14 +61,13 @@ function Genres(props: Props) {
         
     }
 
-    console.log(genres)
 
     useEffect(() => {
         fetchGenres()
         return () => {
             setGenres({}); // unmounting
-    };
-        
+        };
+        // eslint-disable-next-line
     }, [])
 
 

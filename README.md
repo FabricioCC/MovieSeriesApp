@@ -1,6 +1,7 @@
 # Web app of movies and series 
 
-Under development...
+## About this Project
+I made this project to train my knowledge of frontend, creating interfaces and consuming data from an external api. I had a lot of fun doing this.
 
 ### Technologies
  - TypeScript
@@ -9,15 +10,25 @@ Under development...
  - Axios
  - Material-UI
 
-## Available Scripts
 
-In the project directory, you can run:
+## Functionalities
+- Show trending movies and series
+- Search your favorite movies and series
+- Get information about a especific movie, with description, imdb, and others
+- Get information about a especific serie
+  
+## Getting Started
 
-### `yarn start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run this project in the development mode, you'll need to have a basic environment to run a React App.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+
+### Installing
+- First you need to clone this repository
+- add the packages (npm install or yarn add)
+- Get a key from the API (https://www.themoviedb.org/settings/api/request)
+- Add the key in a arquive .env with name REACT_APP_API_KEY
+- npm start ou yarn start
+
 
